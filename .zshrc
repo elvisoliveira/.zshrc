@@ -4,8 +4,11 @@ export ZSH=~/.oh-my-zsh
 # DRY
 ZSH_THEME="agnoster"
 
+# 10ms for key sequences.
+KEYTIMEOUT=1
+
 # DRY
-plugins=(git npm node brew osx docker)
+plugins=(git npm node brew osx docker vi-mode)
 
 # Default behavior:
 source $ZSH/oh-my-zsh.sh
