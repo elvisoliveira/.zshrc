@@ -1,6 +1,10 @@
 # Sysvar
 export ZSH=~/.oh-my-zsh
 
+# Avoid autocomplete logs.
+autoload -U compinit
+compinit -D
+
 # DRY
 ZSH_THEME="agnoster"
 
