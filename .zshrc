@@ -1,9 +1,13 @@
+###########################################################
+# Author:␣Elvis␣Oliveira␣-␣http://github.com/elvisoliveir #
+###########################################################
+
 # Sysvar
 export ZSH=~/.oh-my-zsh
 
 # Avoid autocomplete logs.
 autoload -U compinit
-compinit -D
+compinit -d ~/.oh-my-zsh
 
 # DRY
 ZSH_THEME="agnoster"
