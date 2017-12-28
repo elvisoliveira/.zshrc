@@ -27,14 +27,17 @@ source ~/.vim/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # My custom functions:
 function fs() {
-	local name="$1"
-	find ./ -type f \
-		-not -path '*/\.*' \
-		-not -path "*/node_modules/*" \
-		-exec grep -H $name {} \;
+    local string="$1"
+    local extension="$2"
+    find ./ \
+        -type f \
+        -name $extension \
+        -not -path '*/\.*' \
+        -not -path "*/node_modules/*" \
+        -exec grep -H $string {} \;
 }
 
 function ff() {
-	local name="$1"
-	find ./ -iname $name
+    local name="$1"
+    find ./ -iname $name
 }
