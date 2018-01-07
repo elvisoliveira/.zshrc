@@ -28,6 +28,9 @@ source ~/.vim/site-packages/powerline/bindings/zsh/powerline.zsh
 # New line on every prompt.
 PROMPT+=$'\n'
 
+# NNN Copy
+export NNN_COPIER="echo·-n·$1·|·pbcopy"
+
 # My custom functions:
 function fs() {
     local string="$1"
