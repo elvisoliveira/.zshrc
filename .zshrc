@@ -35,12 +35,7 @@ export NNN_COPIER="echo·-n·$1·|·pbcopy"
 function fs() {
     local string="$1"
     local extension="$2"
-    find ./ \
-        -type f \
-        -name $extension \
-        -not -path '*/\.*' \
-        -not -path "*/node_modules/*" \
-        -exec grep -H $string {} \;
+    grep -r -i --include \*.$extension "$string" . --exclude-dir=node_modules
 }
 
 function ff() {
