@@ -48,3 +48,4 @@ function ff() {
     find ./ -iname $name
 }
 function li() { ls -lah | awk '{print $5, $9$10$11}' | column -t | column }
+function kraken() { /Applications/GitKraken.app/Contents/MacOS/GitKraken -p $(pwd) }
