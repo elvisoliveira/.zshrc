@@ -16,7 +16,7 @@ ZSH_THEME="agnoster"
 KEYTIMEOUT=1
 
 # DRY
-plugins=(git npm node brew osx docker vi-mode)
+plugins=(git npm node brew osx docker vi-mode zsh-autosuggestions)
 
 # Default behavior:
 source $ZSH/oh-my-zsh.sh
