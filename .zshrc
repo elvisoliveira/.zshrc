@@ -47,3 +47,4 @@ function ff() {
     local name="$1"
     find ./ -iname $name
 }
+function li() { ls -lah | awk '{print $5, $9$10$11}' | column -t | column }
