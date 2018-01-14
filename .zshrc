@@ -35,7 +35,7 @@ export NNN_COPIER="echo·-n·$1·|·pbcopy"
 function fs() {
     local string="$1"
     local extension="$2"
-    grep -r -i --include \*.$extension "$string" . --exclude-dir=node_modules
+    grep -r -i --include \*.$extension "$string" . --exclude-dir=bower_components --exclude-dir=node_modules
 }
 
 function ff() {
